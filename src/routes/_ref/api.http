@@ -1,0 +1,13 @@
+@api =  http://localhost:3000/api
+
+### get
+GET {{api}}/downtime
+
+### post
+POST {{api}}/downtime
+Content-Type: application/json
+
+{
+    "name":"gampol",
+    "dob": 1978
+}

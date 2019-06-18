@@ -1,0 +1,11 @@
+version: '3'
+services:
+  postgres:
+    # https://hub.docker.com/_/postgres
+    image: postgres:11.3-alpine
+    restart: always
+    container_name: postgres
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
